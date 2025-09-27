@@ -15,14 +15,22 @@ This project generates a Neo4j graph database from an Excel spreadsheet containi
 pip install -r requirements.txt
 ```
 
-2. Update the configuration in `init.py` with your Neo4j credentials:
-```python
-NEO4J_URI = "your-neo4j-uri"
-NEO4J_USERNAME = "neo4j"
-NEO4J_PASSWORD = "your-password"
+2. Set up your environment variables:
+   - Copy `.env.example` to `.env`
+   - Update the `.env` file with your Neo4j credentials:
+```env
+NEO4J_URI=your-neo4j-uri
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=your-password
+NEO4J_DATABASE=neo4j
+AURA_INSTANCEID=your-instance-id
+AURA_INSTANCENAME=your-instance-name
+EXCEL_FILE=graph_model_sample.xlsx
 ```
 
 3. Prepare your Excel file according to the expected structure (see below).
+
+Note: The `.env` file is ignored by git to keep your credentials secure. Never commit sensitive credentials to version control.
 
 ## Excel File Structure
 
@@ -90,6 +98,9 @@ The script creates relationships between different types of nodes following pred
 - `init.cypher`: Cypher queries for graph initialization
 - `full.cypher`: Complete Cypher query set
 - `graph.png`: Visual representation of the graph model
+- `.env`: Configuration file with credentials (not in version control)
+- `.env.example`: Template for environment variables
+- `.gitignore`: Specifies which files Git should ignore
 
 ## License
 
