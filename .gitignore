@@ -21,10 +21,14 @@ wheels/
 .installed.cfg
 *.egg
 
-# Environment variables
+# Data and Configuration
+data/
+config/
+!config/.env.example
+
+# Environment variables (now in config/)
 .env
 .env.*
-!.env.example
 
 # IDE
 .idea/

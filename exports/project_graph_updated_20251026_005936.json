@@ -1,0 +1,518 @@
+{
+  "metadata": {
+    "source_file": "project graph.xlsx",
+    "export_timestamp": "2025-10-26T00:59:36.859438",
+    "total_sheets": 28,
+    "sheet_names": [
+      "Project",
+      "Budget",
+      "Line_Item",
+      "Stakeholder",
+      "Client",
+      "Role",
+      "Feature",
+      "Risk",
+      "Constraint",
+      "Qual_Scenario",
+      "Artifact",
+      "Decision",
+      "Goal",
+      "Goal_Quotation",
+      "Priority_Level",
+      "KPI",
+      "Evaluation",
+      "Timeline",
+      "Milestone",
+      "Task",
+      "Context",
+      "Business",
+      "Technical",
+      "Adjacent_System",
+      "Input_From_Product",
+      "Output_From_Product",
+      "Relationships",
+      "Domain_Knowledge"
+    ],
+    "update_reason": "Removed requirements, added domain knowledge and relationships",
+    "changes_made": [
+      "Removed Requirement sheet (9 records)",
+      "Removed Functional_Requirement sheet (20 records)",
+      "Added Domain_Knowledge sheet (8 records)",
+      "Added 6 domain knowledge relationships"
+    ]
+  },
+  "nodes": {
+    "Project": [
+      {
+        "id": "P1",
+        "name": "PowerPay",
+        "description": "Zephrins Bakeries located in Barbados asked Keyanola Innovations to produce a Payroll software package to match the  company requirements for both monthly and weekly payroll.  In addition, a second company, River Bay Trading, asked Keyanola to develop a piecework payroll primarily for use in the manufacturing industry where employees are paid based on what their produce and not the time spent on the job."
+      }
+    ],
+    "Budget": [
+      {
+        "Project ID": "B1",
+        "total": 29000
+      }
+    ],
+    "Line_Item": [
+      {
+        "id": "LI1",
+        "description": "Prelimanary Requirements",
+        "budget": 2000.0
+      },
+      {
+        "id": "LI2",
+        "description": "Logical Design",
+        "budget": 2000.0
+      },
+      {
+        "id": "LI3",
+        "description": "Detailed Requirements",
+        "budget": 4000.0
+      },
+      {
+        "id": "LI4",
+        "description": "Physical Design",
+        "budget": 4000.0
+      },
+      {
+        "id": "LI5",
+        "description": "Implementation",
+        "budget": 10000.0
+      },
+      {
+        "id": "LI6",
+        "description": "Training",
+        "budget": 5000.0
+      },
+      {
+        "id": "LI7",
+        "description": "Installation and Configuration",
+        "budget": 2000.0
+      },
+      {
+        "id": "",
+        "description": "",
+        "budget": 29000.0
+      },
+      {
+        "id": "",
+        "description": "",
+        "budget": ""
+      },
+      {
+        "id": "LI8",
+        "description": "Annual Maintenance and Support",
+        "budget": ""
+      }
+    ],
+    "Stakeholder": [
+      {
+        "id": "S1",
+        "name": "Employees"
+      },
+      {
+        "id": "S2",
+        "name": "Tax Department"
+      },
+      {
+        "id": "S3",
+        "name": "National Insurance Department"
+      },
+      {
+        "id": "S4",
+        "name": "Banks"
+      },
+      {
+        "id": "S5",
+        "name": "Courts "
+      },
+      {
+        "id": "S6",
+        "name": "Employees"
+      },
+      {
+        "id": "S7",
+        "name": "Employer"
+      }
+    ],
+    "Client": [
+      {
+        "id": "C1",
+        "name": "Zephrins Bakeries"
+      },
+      {
+        "id": "C2",
+        "name": "River Bay Trading"
+      }
+    ],
+    "Role": [
+      {
+        "id": "R1",
+        "name": "Keyanola Innovations"
+      }
+    ],
+    "Feature": [
+      {
+        "id": "F1",
+        "name": "User Authentication",
+        "description": "System should support a login feature that will allow authorized users to access features of the system. "
+      },
+      {
+        "id": "F2",
+        "name": "Weekly Payroll",
+        "description": "Payroll should facilitate payment of weekly paid workers"
+      },
+      {
+        "id": "F3",
+        "name": "Monthly Payroll ",
+        "description": "Payroll should facilitate payment of monthly paid workers"
+      },
+      {
+        "id": "F4",
+        "name": "Piecework Payroll",
+        "description": "Payroll should facilitate payment of piecework paid workers"
+      },
+      {
+        "id": "F5",
+        "name": "Employee Statuary Deductions ",
+        "description": "Tax and NIS Government deductions"
+      },
+      {
+        "id": "F6",
+        "name": "Employee General Deductions ",
+        "description": "Deductions sent to Stores, Courts and other Employee Debtors"
+      },
+      {
+        "id": "F7",
+        "name": "Employee Allowances",
+        "description": "Provision allowances"
+      },
+      {
+        "id": "F8",
+        "name": "Staff Loans",
+        "description": "Makes procvision for staff loans"
+      },
+      {
+        "id": "F9 ",
+        "name": "Extra Time and Vacation Pay",
+        "description": "Tracks overtime, shifts, and leave."
+      },
+      {
+        "id": "F10",
+        "name": "Attendance & Time Integration",
+        "description": "Inferfaces with standard time and attendance systems"
+      },
+      {
+        "id": "F11",
+        "name": "Employee Information Management",
+        "description": "Employee profiles (name, contact, job role, department)."
+      },
+      {
+        "id": "F12",
+        "name": "Salary Calculation",
+        "description": "Automates gross pay, deductions, and net pay."
+      },
+      {
+        "id": "F13",
+        "name": "Electronic Payment",
+        "description": "Direct Deposit / Bank Transfers"
+      },
+      {
+        "id": "F14",
+        "name": "Compliance and Legal Reporting",
+        "description": "Generates reports required by labor laws, social security agencies, or tax authorities."
+      },
+      {
+        "id": "F15",
+        "name": "Integration Accounting Systems",
+        "description": "Send summarized or detailed transactions to General Ledger software"
+      },
+      {
+        "id": "F16",
+        "name": "Self-Service Portal",
+        "description": "Employees can view/download payslips, update personal details, and check leave balances."
+      },
+      {
+        "id": "F17",
+        "name": "Audit Trails & Security",
+        "description": "Tracks who made changes to payroll data."
+      },
+      {
+        "id": "F18",
+        "name": "Analytics & Dashboards",
+        "description": "For example cost per department"
+      },
+      {
+        "id": "F19",
+        "name": "Automated Reminders",
+        "description": "Payroll deadlines, compliance filings"
+      },
+      {
+        "id": "F20",
+        "name": "Customizable Pay Structures",
+        "description": "Ability to add different types of allowances and deduciions"
+      }
+    ],
+    "Risk": [
+      {
+        "id": "RISK1",
+        "description": "Frequent changes in legislation (tax rates, NIS/NSSF, health surcharges, levy changes, etc.) → software may become non-compliant if updates lag.",
+        "probability": "High",
+        "cost": 0,
+        "Mitigation": "Build configurable tax/deduction engine, monitor BRA & NIS updates regularly."
+      },
+      {
+        "id": "RISK2",
+        "description": "Integration with local banks and the unpredictable  interface changes ",
+        "probability": "High ",
+        "cost": 0,
+        "Mitigation": "Provide flexible export formats (CSV/TXT/XML), partner with banks for specs."
+      },
+      {
+        "id": "RISK3",
+        "description": "Data breach (salaries, NIS numbers)",
+        "probability": "Medium",
+        "cost": 0,
+        "Mitigation": "Enforce encryption (at rest/in transit), audit logs and access controls"
+      },
+      {
+        "id": "RISK4",
+        "description": "High maintenance costs",
+        "probability": "Medium",
+        "cost": 0,
+        "Mitigation": "Make system configurable"
+      },
+      {
+        "id": "RISK5",
+        "description": "Lack of user adoption",
+        "probability": "Medium",
+        "cost": 0,
+        "Mitigation": "Provide training, intuitive UI, and self-service features."
+      },
+      {
+        "id": "RISK6",
+        "description": "Vendor sustainability",
+        "probability": "High ",
+        "cost": 0,
+        "Mitigation": "Ensure long-term support agreements, possible partnerships with established IT firms."
+      }
+    ],
+    "Constraint": [
+      {
+        "id": "CST1",
+        "type": "Legal ",
+        "description": "The system must comply with local tax laws (e.g., PAYE, NIS, Social Security, Medicare, pension deductions)."
+      },
+      {
+        "id": "CST2",
+        "type": "Legal ",
+        "description": "Compliance with minimum wage, overtime, leave entitlements, and working hours regulations."
+      },
+      {
+        "id": "CST3",
+        "type": "Legal ",
+        "description": "Payroll involves sensitive employee information, so the system must follow privacy laws"
+      },
+      {
+        "id": "CST4",
+        "type": "Legal ",
+        "description": "Records must be stored and retrievable for statutory audits and reporting"
+      },
+      {
+        "id": "CST5",
+        "type": "Technical",
+        "description": "System must handle increasing employee numbers without performance degradation."
+      },
+      {
+        "id": "CST6",
+        "type": "Security",
+        "description": "Data in transit and at rest must be protected"
+      },
+      {
+        "id": "CST7",
+        "type": "Security",
+        "description": "Internal controls must prevent unauthorized salary changes, ghost employees, or duplicate payments."
+      },
+      {
+        "id": "CST8",
+        "type": "Security",
+        "description": "Backups and redundancy are required to ensure payroll continuity in case of failures."
+      }
+    ],
+    "Qual_Scenario": [
+      {
+        "id": "QS1",
+        "name": "Fast Payroll Run",
+        "source": "Payroll Administrator",
+        "stimulus": "Requests monthly payroll processing for all employees",
+        "environment": "End of month, week high load (100 + employees)",
+        "artefact": "Payroll processing engine",
+        "response": "System calculates salaries, deductions, and generates pay slips",
+        "response_measure": "Completed within 10 minutes, 100% accuracy"
+      },
+      {
+        "id": "QS2",
+        "name": "Payslip Access",
+        "source": "Employee",
+        "stimulus": "Requests to view payslip online",
+        "environment": "Normal working hours, 300 concurrent requests",
+        "artefact": "Employee self-service portal",
+        "response": "Payslip displayed with all details",
+        "response_measure": "95% of requests respond in <3 seconds"
+      },
+      {
+        "id": "QS3",
+        "name": "Unauthorized Salary Change Attempt",
+        "source": "Unauthorized Staff",
+        "stimulus": "Attempts to modify salary data",
+        "environment": "Normal operations",
+        "artefact": "Payroll database and access control system",
+        "response": "Access denied, attempt logged",
+        "response_measure": "100% of unauthorized attempts blocked, audit trail recorded"
+      },
+      {
+        "id": "QS4",
+        "name": "Tax Rule Update",
+        "source": "Government / Regulatory Body",
+        "stimulus": "Change in tax calculation rules",
+        "environment": "Before next payroll cycle",
+        "artefact": "Payroll rules configuration",
+        "response": "Admin updates configuration without code changes",
+        "response_measure": "Updates applied in <2 hours, new calculations verified"
+      },
+      {
+        "id": "QS5",
+        "name": "Payroll History Request",
+        "source": "Compliance Officer",
+        "stimulus": "Requests audit report for employee payroll history",
+        "environment": "Normal operations",
+        "artefact": "Audit logging system",
+        "response": "System generates payroll history report",
+        "response_measure": "Report available within 2 minutes, covering all changes"
+      },
+      {
+        "id": "QS6",
+        "name": "Concurrent Salary Update Handling",
+        "source": "HR Administrator",
+        "stimulus": "Two admins try to update the same employee’s salary simultaneously",
+        "environment": "Normal operations",
+        "artefact": "Payroll database transaction manager",
+        "response": "System handles concurrency and ensures only one valid update is applied",
+        "response_measure": "No data corruption, updates resolved within 2 seconds"
+      },
+      {
+        "id": "QS7",
+        "name": "Employee Bank Detail Validation",
+        "source": "Employee",
+        "stimulus": "Employee enters incorrect bank account format",
+        "environment": "Employee self-service portal",
+        "artefact": "Bank detail validation module",
+        "response": "System rejects input with a clear error message",
+        "response_measure": "100% invalid inputs flagged instantly"
+      },
+      {
+        "id": "QS8",
+        "name": "Scalable Payroll Expansion",
+        "source": "Company Growth",
+        "stimulus": "Employee count increases from 10,000 to 50,000",
+        "environment": "Future payroll cycle",
+        "artefact": "Payroll processing engine",
+        "response": "System processes expanded payroll without redesign",
+        "response_measure": "Payroll still completes in <10 minutes"
+      },
+      {
+        "id": "QS9",
+        "name": "Data Privacy Access Request",
+        "source": "Employee",
+        "stimulus": "Requests access to their personal payroll data",
+        "environment": "Normal operations",
+        "artefact": "Data privacy and reporting module",
+        "response": "System provides employee’s payroll data only to them",
+        "response_measure": "100% accuracy, no unauthorized data exposure"
+      },
+      {
+        "id": "QS10",
+        "name": "Automated Backup During Payroll Run",
+        "source": "System Scheduler",
+        "stimulus": "Nightly scheduled backup occurs during payroll batch processing",
+        "environment": "End of month payroll run",
+        "artefact": "Database backup subsystem",
+        "response": "System continues processing without interruption",
+        "response_measure": "No downtime, backup completes successfully"
+      }
+    ],
+    "Artifact": [
+      {
+        "id": "A1",
+        "name": "Payroll processing engine",
+        "type": "Application Service",
+        "description": ""
+      },
+      {
+        "id": "A2",
+        "name": "Employee self-service portal",
+        "type": "User Interface",
+        "description": ""
+      },
+      {
+        "id": "A3",
+        "name": "Payroll database",
+        "type": "Database",
+        "description": ""
+      },
+      {
+        "id": "A4",
+        "name": "Payroll rules configuration",
+        "type": "Configuration",
+        "description": ""
+      },
+      {
+        "id": "A5",
+        "name": "Audit logging system",
+        "type": "Libraries / Packages",
+        "description": ""
+      },
+      {
+        "id": "A6",
+        "name": "Payroll database transaction manager",
+        "type": "Data Management Component",
+        "description": ""
+      },
+      {
+        "id": "A7",
+        "name": "Bank detail validation module",
+        "type": "Business Logic Component",
+        "description": ""
+      },
+      {
+        "id": "A8",
+        "name": "Access control system",
+        "type": "Security",
+        "description": ""
+      },
+      {
+        "id": "A9",
+        "name": "Data privacy",
+        "type": "Security",
+        "description": ""
+      },
+      {
+        "id": "A10",
+        "name": "Database backup subsystem",
+        "type": "Infrastructure",
+        "description": ""
+      },
+      {
+        "id": "A11",
+        "name": "Reporting module",
+        "type": "Reporting",
+        "description": ""
+      }
+    ],
+    "Decision": [
+      {
+        "id": "D1",
+        "description": "modular/microservices architecture - separate services for payroll processing, reporting, authentication etc. ",
+        "date": 
